@@ -1,0 +1,194 @@
+body {
+  background-image: url(../images/bg.jpg);
+  height: 100%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  overflow-x: hidden;
+
+}
+
+.dealer{
+  height: 150px;
+  /* width: 50px; */
+  text-align: center;
+  align: center;
+  border: 1px solid #fff;
+  border-radius: 255px;
+  display: flex;
+  justify-content: center;
+  background-color: #323533;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 200px;
+}
+
+.player-card {
+border-radius: 255px;
+background-color: #323533;
+/* width: 50px; */
+height: 150px;
+text-align: center;
+align: center;
+border: 20px solid #fff;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+.flex-container{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-container {
+  color: #fff;
+  /* background-color: #157024; */
+  padding: 20px 0;
+}
+
+.menu {
+  border: 1px solid #fff;
+  width: 900px;
+}
+
+#text-area{
+  text-align: center;
+  font-size: 24px;
+}
+#new-game-button{
+  text-align: center;
+}
+
+.row {
+  margin-left: -15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#player1-hit-button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+}
+
+#player1-stay-button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: 1em;
+}
+
+#player2-hit-button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+}
+
+#player2-stay-button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: 1em;
+}
+
+#player3-hit-button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+}
+
+#player3-stay-button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: 1em;
+}
+
+.modal-body {
+	color: black;
+}
+
+.modal-header {
+	color: black;
+}
+
+/* .text-center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+} */
+
+/* .modal-title {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+} */
+
+.modal-body {
+	color: black;
+}
+
+.modal-header {
+	color: black;
+  margin: 0 auto;
+}
+
+.login-image {
+  width: 250px;
+  height: 200px;
+  margin-top: 10px;
+  border-radius: .3rem;
+}
+
+.main-section {
+  /* padding: 0 !important; */
+   /* margin: 0 !important; */
+  margin: auto;
+}
+
+
+/* .modal {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+} */
+
+.link-part {
+  margin-bottom: 10px;
+}
+
+.hit-buttons {
+  margin-right: 5px;
+}
+
+.playAgainBtn {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  background-color: #29a645;
+  margin: auto;
+  margin-top: -350px;
+}
+
+.required {
+  font-size: 8px;
+  color: red;
+  margin-left: -225px;
+  margin-top: -10px;
+}

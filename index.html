@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Blackjack!</title>
+
+  <!--  -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" /> -->
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+  <!-- Our CSS link -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+
+  <div class='menu-container'>
+    <p id="text-area">Welcome to Blackjack!</p>
+    <br>
+
+    <div class="open-modal text-center">
+  <!-- <a href="#myModal" class="btn btn-danger trigger-btn" data-toggle="modal">Click to Open Login Modal</a> -->
+</div>
+<div id="myModal" class="modal fade text-center">
+  <div class="modal-dialog">
+    <div class="col-lg-8 col-sm-8 col-12 main-section">
+      <div class="modal-content">
+        <div class="col-lg-12 col-sm-12 col-12 user-img">
+          <img class="login-image" src="assets/images/login.jpg">
+        </div>
+        <div class="col-lg-12 col-sm-12 col-12 user-name">
+          <h1>User Login</h1>
+          <!-- <button type="button" class="close" data-dismiss="modal">×</button> -->
+        </div>
+        <div class="col-lg-12 col-sm-12 col-12 form-input">
+          <form>
+            <div class="form-group">
+              <input type="name" class="form-control" id="name-field" placeholder="Enter your name">
+            </div>
+            <div>
+              <p class="required">*required</p>
+            </div>
+            <button type="submit" class="btn btn-success" id="play-button" data-dismiss="modal">Play!</button>
+          </form>
+        </div>
+        <div class="col-lg-12 col-sm-12 col-12 link-part">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- <div style="text-align:center;"> -->
+  <!-- <button id="new-game-button">New Game!</button> -->
+    <!-- </div> -->
+  <div class="flex-container">
+    <div class="row">
+      <div id="dealer" class="col-md-4 dealer">dealer</div>
+      <div id="dealer-card-display" class="card-display">
+
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-3">
+        <div id="player-0-buttons" style="display: flex;justify-content: center;margin-bottom: 1em;"></div>
+        <div id="player-0" class="player-card">Player 1</div>
+        <div id="player-0-card-display" class="card-display">
+
+        </div>
+      </div>
+
+        <div class="col-lg-3">
+          <div id="player-1-buttons" style="display: flex;justify-content: center;margin-bottom: 1em;"></div>
+          <div id="player-1" class="player-card">Player 2</div>
+          <div id="player-1-card-display" class="card-display">
+
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div id="player-2-buttons" style="display: flex;justify-content: center;margin-bottom: 1em;"></div>
+          <div id="player-2" class="player-card">Player 3</div>
+          <div id="player-2-card-display" class="card-display">
+
+          </div>
+      </div>
+    </div>
+  </div>
+
+      <!-- Game message section -->
+        <div class="col-sm-12 col-md-12 col-lg-12" id="message-section">
+          <div id="game-message"></div>
+        <button class="btn btn-success btn-lg playAgainBtn text-center" id="restart"> Play Again? </button>
+      </div>
+      <!-- Game message section -->
+
+
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+
+
+
+        <!-- jQuery and Underscore (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script> -->
+
+        <!-- Our js link -->
+        <script src="assets/javascript/app.js"></script>
+</body>
+</html>
